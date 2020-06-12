@@ -1,31 +1,90 @@
-#include <iostream>
-#include <algorithm>
-#include <cstdlib>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
+#define ll long long
+#define fo(i,n) for(i=0;i<n;i++)
+#define forev(i,n) for(i=n;i>0;i--)
+#define si(x)  scanf("%d", &x)
+#define sl(x)  scanf("%lld", &x)
+#define ss(s)  sacnf("%s", s)
+#define pi(x)  printf("%d\n", x)
+#define pl(x)  printf("%lld\n", x)
+#define ps(s)  printf("%s\n", s)
+#define deb(x) cout<< #x << "=" << x << endl;
+#define deb2(x, y) cout<< #x << "=" << x <<","<< #y << "=" << y <<endl;
+#define all(x) a.begin(), x.end()
+#define sortall(x) sort(all(x))
+#define pb push_back
+#define tr(it, a) for(auto it = a.begin(); it != a.end(); it++)
+
+typedef pair<int, int> pii;
+typedef pair<ll, ll>   pl; 
+typedef vector<int>   vi;
+typedef vector<ll>    vl;
+typedef vector<vi>    vvi;
+typedef vector<vl>    vvl;
+
+const int MOD = 1000000007;   //(10^9 + 7)
+
+
+
+void solve(int arr[],int n)
+{
+	int i,j,m,a,b,rem,count=0,small=10001;
+	fo(i,n-1)
+	{
+		for(j=i+1;j<n;j++)
+		{
+			rem = abs(arr[i]-arr[j]);
+			if(rem<small)
+			{
+				small = rem;
+			}
+		}
+	}
+	cout<<small<<endl;
+}
+
+
+
+
+
+int mpow(int base, int exp)
+{
+	base %= MOD;
+	int result = 1;
+	while(exp>0)
+	{
+		if(exp & 1)
+		{
+			result = ((ll)result*base);
+		}
+		
+		base = ((ll)base*base) % MOD;
+		exp >>= 1;
+	}
+	
+	return result;
+}
+
+
+
+
 int main()
 {
 	int t;
 	cin>>t;
 	while(t--)
 	{
-	    int n,i;
-	    cin>>n;
-	    int a[n];
-	    for(i=0;i<n;i++)
-	    {
-	    	cin>>a[i];
+		int n,i;
+		cin>>n;
+		int arr[n];
+		fo(i,n)
+		{
+			cin>>arr[i];
 		}
-		sort(a, a+n); 
-  
-   // Initialize difference as infinite 
-   		int diff = INT_MAX; 
-  
-   // Find the min diff by comparing adjacent 
-   // pairs in sorted array 
-   		for (int i=0; i<n-1; i++) 
-      		if (a[i+1] - a[i] < diff) /*&& (a[i+1]!=a[i])) */
-          		diff = a[i+1] - a[i];
-        cout<<diff<<endl;
+		solve(arr,n);
 	}
+	
+	return 0;
 }
+
