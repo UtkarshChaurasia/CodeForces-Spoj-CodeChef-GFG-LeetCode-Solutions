@@ -33,16 +33,16 @@ void solve()
   int n,k,i;
 		long long sum=0;
 		cin>>n>>k;
-		int a[n];
-		for(i=0;i<n;i++)
+		int arr[n];
+		fo(i,n)
 		{
-			cin>>a[i];
+			cin>>arr[i];
 		}
-		for(i=0;i<n;i++)
+		fo(i,n)
 		{
-			if(a[i]>k)
+			if(arr[i]>k)
 			{
-				sum=sum+(a[i]-k);
+				sum=sum+(arr[i]-k);
 			}
 		}
 		cout<<sum<<endl;
