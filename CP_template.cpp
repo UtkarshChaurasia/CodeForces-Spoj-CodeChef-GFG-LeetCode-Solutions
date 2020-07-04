@@ -11,8 +11,9 @@ using namespace std;
 #define ps(s)  printf("%s\n", s)
 #define deb(x) cout<< #x << "=" << x << endl;
 #define deb2(x, y) cout<< #x << "=" << x <<","<< #y << "=" << y <<endl;
-#define all(x) a.begin(), x.end()
+#define all(x) x.begin(), x.end()
 #define sortall(x) sort(all(x))
+#define find(x,n) binary_search(all(x), n)
 #define pb push_back
 #define tr(it, a) for(auto it = a.begin(); it != a.end(); it++)
 
