@@ -34,7 +34,7 @@ void demoVector()
     }
     cout<<endl;
 
-    
+
     cout << "Sum of elements: " << accumulate(vec.begin(), vec.end(), 0)<<endl; //sum of elements of vector where initial value of sum = 0 553
     
 
@@ -76,15 +76,31 @@ void demoVector()
 
      cout << "Vector after removing 6th and duplicate elements: " << endl;
 
-     for(auto &x: vec)   // by reference(for incrementing elements by 1)
+     for(auto &x: vec)   // by reference
      {
-         cout << x << " ";   // 124 101 101 101 101 15 12 4 3
+         cout << x << " ";   // 124 101 12 4 3
      }
      cout << endl;
-
-
-
 }
+
+     /*
+
+    OUTPUT
+
+    Minimium element: 2
+    2 3 11 14 100 100 100 100 123 
+    Sum of elements: 553
+    Lower Bound on 100: 100 
+    Upper Bound on 100: 123
+    Number of 100: 4
+    Number of 100: 4
+    Distance between 1st element and max element: 8
+    Reversing the vector and incrementing each element by 1: 
+    124 101 101 101 101 15 12 4 3 
+    Vector after removing 6th and duplicate elements: 
+    124 101 12 4 3 
+     */
+
 
 
 
@@ -94,8 +110,6 @@ int main()
 {
 
     demoVector();
-
-
 
     return 0;
 }
