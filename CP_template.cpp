@@ -16,6 +16,7 @@ using namespace std;
 #define find(x,n) binary_search(all(x), n)
 #define pb push_back
 #define F first
+#define S second
 #define tr(it, a) for(auto it = a.begin(); it != a.end(); it++)
 
 typedef pair<int, int> pii;
