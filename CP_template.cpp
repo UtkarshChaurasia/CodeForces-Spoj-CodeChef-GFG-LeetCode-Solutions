@@ -3,6 +3,7 @@ using namespace std;
 #define ll long long
 #define fo(i,n) for(i=0;i<n;i++)
 #define forev(i,n) for(i=n;i>0;i--)
+#define dfo(a,b,c) for(i=a;i<b;i+=c)
 #define si(x)  scanf("%d", &x)
 #define sl(x)  scanf("%lld", &x)
 #define ss(s)  sacnf("%s", s)
