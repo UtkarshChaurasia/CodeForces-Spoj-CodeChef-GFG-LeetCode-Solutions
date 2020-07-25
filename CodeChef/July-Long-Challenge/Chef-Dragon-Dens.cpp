@@ -115,7 +115,6 @@ void solve()
 	                {
 	                    cout<<-1<<endl;
 	                }
-	                
 	            }
 	            else if(b==c)
 	            {
