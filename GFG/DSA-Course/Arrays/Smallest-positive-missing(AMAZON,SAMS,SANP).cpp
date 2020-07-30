@@ -27,6 +27,8 @@ Output:
 TIME: O(N)
 SPACE: O(N)
 
+
+OPTIMIZED APPROACH IS EXPLAINED AFTER THIS SOLUTION
 */
 
 
@@ -91,6 +93,134 @@ void solve()
 	cout<<ans<<endl;
 
 
+}
+
+
+
+
+
+int mpow(int base, int exp)
+{
+	base %= MOD;
+	int result = 1;
+	while(exp>0)
+	{
+		if(exp & 1)
+		{
+			result = ((ll)result*base);
+		}
+		
+		base = ((ll)base*base) % MOD;
+		exp >>= 1;
+	}
+	
+	return result;
+}
+
+
+
+
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		solve();
+	}
+	
+	return 0;
+}
+
+
+
+/*
+
+OPTIMIZED APPROACH - Using INDEX REFERNCING
+
+TIME: O(N)
+SPACE: O(1)
+
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define fo(i,n) for(i=0;i<n;i++)
+#define forev(i,n) for(i=n;i>0;i--)
+#define dfo(a,b,c) for(i=a;i<b;i+=c)
+#define si(x)  scanf("%d", &x)
+#define sl(x)  scanf("%lld", &x)
+#define ss(s)  sacnf("%s", s)
+#define pi(x)  printf("%d\n", x)
+#define pl(x)  printf("%lld\n", x)
+#define ps(s)  printf("%s\n", s)
+#define deb(x) cout<< #x << "=" << x << endl;
+#define deb2(x, y) cout<< #x << "=" << x <<","<< #y << "=" << y <<endl;
+#define all(x) x.begin(), x.end()
+#define sortall(x) sort(all(x))
+#define find(x,n) binary_search(all(x), n)
+#define pb push_back
+#define F first
+#define S second
+#define tr(it, a) for(auto it = a.begin(); it != a.end(); it++)
+
+typedef pair<int, int> pii;
+typedef pair<ll, ll>   pl; 
+typedef vector<int>   vi;
+typedef vector<ll>    vl;
+typedef vector<vi>    vvi;
+typedef vector<vl>    vvl;
+
+const int MOD = 1000000007;   //(10^9 + 7)
+
+int shiftposneg(int arr[], int n) // TO SEPARATE POS AND NEG ELEMENT
+{
+    int i,j=0;
+    fo(i,n)
+    {
+        if(arr[i]<=0)
+        {
+            swap(arr[i],arr[j]);
+            j++;
+        }
+    }
+    return j;
+}
+
+
+int findmissing(int arr[], int n) //FINDING THE MISSIMG NUMBER USING INDEX REFERENCING
+{
+    int i;
+    fo(i,n)
+    {
+        if(abs(arr[i]-1)<n && arr[abs(arr[i])-1] > 0)
+        {
+            arr[abs(arr[i])-1] *= -1; 
+        }
+    }
+    
+    fo(i,n)
+    {
+        if(arr[i]>0)
+        {
+            return i+1;
+        }
+    }
+    return -1;
+}
+
+void solve()
+{
+	int i,j,n,m,a,b,rem,count=0,sum=0;
+	cin>>n;
+	int arr[n];
+	fo(i,n)
+	{
+	    cin>>arr[i];
+	}
+	int shift = shiftposneg(arr,n);
+	cout<<findmissing(arr+shift, n-shift)<<endl;
 }
 
 
