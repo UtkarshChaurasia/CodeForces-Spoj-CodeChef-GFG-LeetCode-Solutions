@@ -1,8 +1,10 @@
 /*
-You are given an array A (distinct elements) of size N. Find out the maximum difference between any two elements such that larger element appears after the smaller number in A.
+You are given an array A (distinct elements) of size N. Find out the maximum difference between any two elements such that larger element appears after the 
+smaller number in A.
 
 Input:
-The first line of input contains an integer T denoting the number of test cases. T testcases follow. Each testcase contains two lines of input. The first line of each test case is N,N is the size of array. The second line of each test case contains N elements separated by spaces.
+The first line of input contains an integer T denoting the number of test cases. T testcases follow. Each testcase contains two lines of input. The first 
+line of each test case is N,N is the size of array. The second line of each test case contains N elements separated by spaces.
 
 Output:
 For each testcase, print the maximum difference between two element. Otherwise print -1
