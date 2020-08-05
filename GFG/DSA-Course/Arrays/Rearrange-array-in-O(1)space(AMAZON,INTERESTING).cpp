@@ -1,10 +1,12 @@
 /*
-Given a sorted array of positive integers. Your task is to rearrange  the array elements alternatively i.e first element should be max value, second should be min value, third should be second max, fourth should be second min and so on...
+Given a sorted array of positive integers. Your task is to rearrange  the array elements alternatively i.e first element should be max value, 
+second should be min value, third should be second max, fourth should be second min and so on...
 
 Note: O(1) extra space is allowed. Also, try to modify the input array as required.
 
 Input:
-First line of input conatins number of test cases T. First line of test case contain an integer denoting the array size N and second line of test case contain N space separated integers denoting the array elements.
+First line of input conatins number of test cases T. First line of test case contain an integer denoting the array size N and second line of test case 
+contain N space separated integers denoting the array elements.
 
 Output:
 Output the modified array with alternated elements.
