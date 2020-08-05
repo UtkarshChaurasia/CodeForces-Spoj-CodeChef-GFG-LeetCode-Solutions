@@ -1,10 +1,12 @@
 /*
-Given an array A[] of N positive integers which can contain integers from 1 to N where elements can be repeated or can be absent from the array. Your task is to count frequency of all elements from 1 to N.
+Given an array A[] of N positive integers which can contain integers from 1 to N where elements can be repeated or can be absent from the array. Your 
+task is to count frequency of all elements from 1 to N.
 
 Note: Expected time complexity is O(n) with O(1) extra space.
 
 Input:
-First line of input contains an integer T denoting the number of test cases. For each test case, first line contains an integer N denoting the size of array. The second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.
+First line of input contains an integer T denoting the number of test cases. For each test case, first line contains an integer N denoting the size of array. 
+The second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.
 
 Output:
 For each test case, output N space-separated integers denoting the frequency of each element from 1 to N.
