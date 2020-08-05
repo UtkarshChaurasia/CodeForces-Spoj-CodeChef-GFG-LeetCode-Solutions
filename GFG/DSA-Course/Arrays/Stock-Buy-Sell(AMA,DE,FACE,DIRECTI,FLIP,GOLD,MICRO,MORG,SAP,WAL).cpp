@@ -1,8 +1,10 @@
 /*
-The cost of stock on each day is given in an array A[] of size N. Find all the days on which you buy and sell the stock so that in between those days your profit is maximum.
+The cost of stock on each day is given in an array A[] of size N. Find all the days on which you buy and sell the stock so that in between those days your 
+profit is maximum.
 
 Input: 
-First line contains number of test cases T. First line of each test case contains an integer value N denoting the number of days, followed by an array of stock prices of N days. 
+First line contains number of test cases T. First line of each test case contains an integer value N denoting the number of days, followed by an array of 
+stock prices of N days. 
 
 Output:
 For each testcase, output all the days with profit in a single line. And if there is no profit then print "No Profit".
