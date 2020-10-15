@@ -9,7 +9,8 @@ Output : 1 2 3 4
          1     4 
          5 6 7 8
 Input:
-First line consists of  the input contains an intger T denoting the number of  test cases. Then T test cases follow. First line of every test case consists of an integer N, denoting size of the Matrix. Second line of every test case consists of N x N spaced integers denoting elements of Matrix elements.
+First line consists of  the input contains an intger T denoting the number of  test cases. Then T test cases follow. First line of every test case 
+consists of an integer N, denoting size of the Matrix. Second line of every test case consists of N x N spaced integers denoting elements of Matrix elements.
 
 Output:
 For each test case output a single line output, print the boundary elements of the matrix.
