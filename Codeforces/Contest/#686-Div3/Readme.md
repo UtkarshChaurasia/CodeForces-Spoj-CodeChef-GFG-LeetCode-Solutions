@@ -2,7 +2,7 @@
 
 ## Problem A. [QUESTION](https://codeforces.com/contest/1454/problem/A)
 
-- It was a very simple problem. Overthought a bit which costed some time.
+- It was a very simple problem. Overthought a bit which costed some time.<br>
 Learning: **Don't overthink on problem A**.
 
 ## Problem B. [QUESTION](https://codeforces.com/contest/1454/problem/B)
@@ -10,14 +10,14 @@ Learning: **Don't overthink on problem A**.
 - It was a simple problem of finding minimum number in an array having frequency 1.
 - Can be easily implemented using maps or frequency arrays.
 - Used frequency array but due to silly mistakes got **3 WAs** costing heavy penalties.
-- **Took a lot of pressure of improving ratings.**
+- **Took a lot of pressure of improving ratings.**<br>
 Learning: **Avoid silly mistakes and do not take pressure. Keep Calm**
 
 ## Problem C. [QUESTION](https://codeforces.com/contest/1454/problem/C)
 
 - Problem based on the concept of frequency array/map. 
 - Included greedy approach.
-- Got **2 WAs** again due to pressure could not think of a corner case.
+- Got **2 WAs** again due to pressure could not think of a corner case.<br>
 Learning: **Learned two new concept**.
 1. **unique()** - Used to removes duplicate of the elements occuring consecutively.
               it just returns a pointer pointing to the new end of the container, and 
@@ -34,6 +34,6 @@ Learning: **Learned two new concept**.
   updation of variables according to those comaprisons.<br>
 
 Learning: **Learned a new way of solving these kind of problems. Implementation was quite challenging-Memory Optimised Approach.**
-<br>
+<br><br>
 **TAKE AWAY**: **Don't take pressure. It reduces the ablity to think. A problems have simple logic and implementation.**
 
