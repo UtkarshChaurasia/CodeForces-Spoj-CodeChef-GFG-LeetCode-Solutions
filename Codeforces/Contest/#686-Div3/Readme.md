@@ -25,7 +25,7 @@ Learning: **Learned two new concept**.
                       
 2. **resize()** - Used to resize the dynamic arrays.
 
-# Problem D. [QUESTION](https://codeforces.com/contest/1454/problem/D)
+## Problem D. [QUESTION](https://codeforces.com/contest/1454/problem/D)
 
 - Problem was quite good and needed knowledge of number theory and skills to implement the solution.
 - Based on a concept of number theory i.e. **Prime Factors**
