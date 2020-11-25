@@ -33,7 +33,7 @@ Learning: **Learned two new concept**.
 - Map can be used to implement the solution but it is not the memory efficient solution. I used variables and made simple comparisons and 
   updation of variables according to those comaprisons.<br>
 <br>
-Learning: **Learned a new way of solving these kind of problems. Implementation was quite challenging(Memory Optimised Approach).
+Learning: **Learned a new way of solving these kind of problems. Implementation was quite challenging(Memory Optimised Approach).**
 <br>
-TAKE AWAY: Don't take pressure. It reduces the ablity to think. A problems have simple logic and implementation.**
+**TAKE AWAY**: **Don't take pressure. It reduces the ablity to think. A problems have simple logic and implementation.**
 
