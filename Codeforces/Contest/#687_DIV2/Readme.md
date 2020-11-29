@@ -2,7 +2,7 @@
 
 ## Problem A. [QUESTION](https://codeforces.com/contest/1457/problem/A)
 
-- It was a very simple problem. Took a some time to visualize and understand the problem.<br>
+- It was a very simple problem. Took some time to visualize and understand the problem.<br>
 Learning: **Need to increase typing speed XD**.
 
 ## Problem B. [QUESTION](https://codeforces.com/contest/1457/problem/B)
