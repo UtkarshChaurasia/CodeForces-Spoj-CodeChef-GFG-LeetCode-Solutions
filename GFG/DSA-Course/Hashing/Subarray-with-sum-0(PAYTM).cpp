@@ -27,7 +27,8 @@ Explanation:
 in the array so there exist a 
 subarray with sum 0.
 Your Task:
-You only need to complete the function subArrayExists() that takes array and n as parameters and returns true or false depending upon whether there is a subarray present with 0-sum or not. Printing will be taken care by the drivers code.
+You only need to complete the function subArrayExists() that takes array and n as parameters and returns true or false depending upon whether there is a 
+subarray present with 0-sum or not. Printing will be taken care by the drivers code.
 
 Expected Time Complexity: O(n).
 Expected Auxiliary Space: O(n).
