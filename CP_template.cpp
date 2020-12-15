@@ -16,6 +16,7 @@ using namespace std;
 #define sortall(x) sort(all(x))
 #define find(x,n) binary_search(all(x), n)
 #define pb push_back
+#define mp make_pair
 #define F first
 #define S second
 #define tr(it, a) for(auto it = a.begin(); it != a.end(); it++)
@@ -26,6 +27,10 @@ typedef vector<int>   vi;
 typedef vector<ll>    vl;
 typedef vector<vi>    vvi;
 typedef vector<vl>    vvl;
+typedef set<int>   si;
+typedef set<ll>   sl;
+typedef unordered_map<int, int> umi;
+typedef map<int, int> mi;
 
 const int MOD = 1000000007;   //(10^9 + 7)
 
