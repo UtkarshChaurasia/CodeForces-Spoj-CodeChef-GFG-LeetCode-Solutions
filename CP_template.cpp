@@ -34,14 +34,16 @@ typedef map<int, int> mi;
 
 const int MOD = 1000000007;   //(10^9 + 7)
 
-
-
-void solve()
-{
-	int i,j,n,m,a,b,rem,count=0,sum=0;
+ll gcdll(ll a,ll b) {
+    if (b==0) return a;
+    return gcdll(b,a%b);
 }
 
 
+int gcd(int a,int b) {
+    if (b==0) return a;
+    return gcd(b,a%b);
+}
 
 
 
@@ -64,6 +66,11 @@ int mpow(int base, int exp)
 }
 
 
+
+void solve()
+{
+	int i,j,n,m,a,b,rem,count=0,sum=0;
+}
 
 
 int main()
