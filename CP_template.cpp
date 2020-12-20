@@ -49,6 +49,7 @@ bool isprime(ll n)
   return true; 
 } 
 
+/*  SEIVE CODE COMMENTED DUE TO MEMORY USAGE
 bool prime[15000105]; 
 void sieve(int n) 
 { 
@@ -62,7 +63,7 @@ void sieve(int n)
 	} 
   } 
   prime[1] = prime[0] = 0;
-}
+}*/
 
 
 
