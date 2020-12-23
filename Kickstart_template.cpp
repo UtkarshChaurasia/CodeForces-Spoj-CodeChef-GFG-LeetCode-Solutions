@@ -32,10 +32,51 @@ typedef set<ll>   sl;
 typedef unordered_map<int, int> umi;
 typedef map<int, int> mi;
 
-
 const int MOD = 1000000007;   //(10^9 + 7)
 
 
+bool isprime(ll n) 
+{ 
+  if (n <= 1) return false; 
+  if (n <= 3) return true; 
+
+  if (n % 2 == 0 || n % 3 == 0) return false; 
+
+  for (ll i = 5; i * i <= n; i += 6) 
+	if (n % i == 0 || n % (i+2) == 0) 
+	  return false; 
+
+  return true; 
+} 
+
+/*  SEIVE CODE COMMENTED DUE TO MEMORY USAGE
+bool prime[15000105]; 
+void sieve(int n) 
+{ 
+  for (ll i = 0; i <= n; i++) prime[i] = 1;
+  for (ll p = 2; p * p <= n; p++) 
+  { 
+	if (prime[p] == true) 
+	{ 
+	  for (ll i = p * p; i <= n; i += p) 
+		prime[i] = false; 
+	} 
+  } 
+  prime[1] = prime[0] = 0;
+}*/
+
+
+
+ll gcdll(ll a,ll b) {
+    if (b==0) return a;
+    return gcdll(b,a%b);
+}
+
+
+int gcd(int a,int b) {
+    if (b==0) return a;
+    return gcd(b,a%b);
+}
 
 void solve(int t)
 {
