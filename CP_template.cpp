@@ -15,6 +15,7 @@ using namespace std;
 #define all(x) x.begin(), x.end()
 #define sortall(x) sort(all(x))
 #define find(x,n) binary_search(all(x), n)
+#define digCount(x) floor(log10(n)+1)
 #define pb push_back
 #define mp make_pair
 #define F first
