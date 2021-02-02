@@ -27,7 +27,8 @@ Input:
   40    60
 Output: 2
 Your Task:
-You don't have to read any input. Just complete the function getMaxWidth() that takes node as parameter and returns the maximum width. The printing is done by the driver code.
+You don't have to read any input. Just complete the function getMaxWidth() that takes node as parameter and returns the maximum width. The printing is 
+done by the driver code.
 
 Expected Time Complexity: O(N).
 Expected Auxiliary Space: O(N).
@@ -79,7 +80,8 @@ int getMaxWidth(Node* root)
 }
 
 /*LEETCODE VARIATION - COUNT NULL ALSO
-The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the null nodes between the end-nodes are also counted into the length calculation.
+The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the null nodes 
+between the end-nodes are also counted into the length calculation.
 
 It is guaranteed that the answer will in the range of 32-bit signed integer.
 
