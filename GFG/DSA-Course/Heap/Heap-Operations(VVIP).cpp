@@ -1,4 +1,3 @@
-/* Removes min element from min heap and returns it */
 void MinHeap::MinHeapify(int i) {
     int l = left(i);
     int r = right(i);
@@ -15,7 +14,20 @@ int MinHeap::extractMin() {
     // Your code here
     if(heap_size<=0)
         return -1;
-        void MinHeap::deleteKey(int i) {
+        
+    if(heap_size==1)
+    {
+        heap_size--;
+        return harr[0];
+    }
+    swap(harr[0],harr[heap_size-1]);
+    heap_size--;
+    MinHeapify(0);
+    return harr[heap_size];
+}
+
+/* Removes element from position x in the min heap  */
+void MinHeap::deleteKey(int i) {
     // Your code here
     //cout<<harr[i]<<" ";
     if (i < heap_size) {
