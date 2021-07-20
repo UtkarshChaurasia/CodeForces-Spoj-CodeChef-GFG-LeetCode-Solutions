@@ -29,7 +29,7 @@ typedef vector<ll>    vl;
 typedef vector<vi>    vvi;
 typedef vector<vl>    vvl;
 typedef vector<pi>    vpi;
-
+typedef vector<pl>    vpl;
 typedef set<int>   si;
 typedef set<ll>   sl;
 typedef unordered_map<int, int> umi;
