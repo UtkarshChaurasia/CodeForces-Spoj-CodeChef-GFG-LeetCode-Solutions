@@ -1,6 +1,6 @@
 apiVersion: cluster.example.dev/v1alpha1
 kind: Cluster
 metadata:
-  name: local
+  name: local1
 spec:
   kubeconfig: |
